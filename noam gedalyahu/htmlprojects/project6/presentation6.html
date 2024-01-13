@@ -33,28 +33,41 @@
     </a>
     <!-------------------- Scroll-Top Area (End) -------------------->
 
-        
+       <!-------------------- Header Area (Start) -------------------->
 
-    <!-------------------- Header Area (Start) -------------------->
-    <header class="header">
-
-        <!-- Logo -->
-        <a class="logo" href="#home">
-            <h2> Noam Project 6 </h2> 
-        </a>
-        <!-- Navbar -->
+       <header class="header">
         <nav class="navbar">
-            <a href="http://127.0.0.1:5500/Noam%20Gedalyahu/index.html#home">Home</a>
-            <a href="http://127.0.0.1:5500/Noam%20Gedalyahu/index.html#about">About</a>
-            <a href="http://127.0.0.1:5500/Noam%20Gedalyahu/index.html#Projects">Projects</a>
-            <a href="http://127.0.0.1:5500/Noam%20Gedalyahu/index.html#contact">Contact</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="link">
+                <a class="logo" href="https://noamg98.github.io/Noam-Portfolio/noam%20gedalyahu/index.html#home">
+                    <h2>Noam Project 1 </h2> 
+                <li><a href="https://noamg98.github.io/Noam-Portfolio/noam%20gedalyahu/index.html#home">Home</a></li>
+                <li><a href="https://noamg98.github.io/Noam-Portfolio/noam%20gedalyahu/index.html#about">About</a></li>
+                <li><a href="https://noamg98.github.io/Noam-Portfolio/noam%20gedalyahu/index.html#Projects">Projects</a></li>
+                <li><a href="https://noamg98.github.io/Noam-Portfolio/noam%20gedalyahu/index.html#contact">Contact</a></li>
+            </ul>
         </nav>
+        
+         <!-------------------- navbar Area script (Start) -------------------->
 
-        <!-- Menubar -->
-        <div class="fas fa-bars" id="menu-btn"></div>
-    </header>
-    <!-------------------- Header Area (End) -------------------->
+        <script>
+        document.getElementById("mobile-menu").addEventListener("click", function() {
+            var navList = document.querySelector(".link");
+            navList.classList.toggle("show");
+        });
+        </script>
 
+        <!-------------------- navbar Area script (End) -------------------->
+
+    </header> 
+
+     <!-------------------- Header Area (End) -------------------->
+
+     
     <!-------------------- Home Area (Start) -------------------->
     <section class="home" id="home">
 

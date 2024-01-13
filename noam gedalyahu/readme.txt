@@ -16,27 +16,27 @@ This portfolio is built using HTML and CSS to present my skills and highlight si
 ## Projects
 1. **Project 1: Here & Now**
    - Description: This project was made by me in Vs code and i used HTML and CSS.
-   - Live Demo: [http://127.0.0.1:5500/Noam%20Gedalyahu/HTMLProject/Project1/presentation1.html]
+   - Live Demo: [https://noamg98.github.io/Noam-Portfolio/noam%20gedalyahu/htmlprojects/project1/presentation1.html]
 
 2. **Project 2: Project Name**
    -  Description: This project was made by me in Vs code and i used HTML and CSS.
-   - Live Demo: [http://127.0.0.1:5500/Noam%20Gedalyahu/HTMLProject/Project2/presentation2.html]
+   - Live Demo: [https://noamg98.github.io/Noam-Portfolio/noam%20gedalyahu/htmlprojects/project2/presentation2.html]
 
 3. **Project 3: Project Name**
    - Description: This project was made by me in Vs code and i used HTML and CSS.
-   - Live Demo: [http://127.0.0.1:5500/Noam%20Gedalyahu/HTMLProject/Project3/presentation3.html]
+   - Live Demo: [https://noamg98.github.io/Noam-Portfolio/noam%20gedalyahu/htmlprojects/project3/presentation3.html]
 
 4. **Project 4: Project Name**
    - Description: This project was made by me in Vs code and i used HTML and CSS.
-   - Live Demo: [http://127.0.0.1:5500/Noam%20Gedalyahu/HTMLProject/Project4/presentation4.html]
+   - Live Demo: [https://noamg98.github.io/Noam-Portfolio/noam%20gedalyahu/htmlprojects/project4/presentation4.html]
 
 5. **Project 5: Project Name**
    - Description: This project was made by me in Vs code and i used HTML and CSS.
-   - Live Demo: [http://127.0.0.1:5500/Noam%20Gedalyahu/HTMLProject/Project5/presentation5.html]
+   - Live Demo: [https://noamg98.github.io/Noam-Portfolio/noam%20gedalyahu/htmlprojects/project5/presentation5.html]
 
 6. **Project 6: Project Name**
    - Description: This project was made by me in Vs code and i used HTML and CSS.
-   - Live Demo: [http://127.0.0.1:5500/Noam%20Gedalyahu/HTMLProject/Project6/presentation6.html]
+   - Live Demo: [https://noamg98.github.io/Noam-Portfolio/noam%20gedalyahu/htmlprojects/project6/presentation6.html]
 
 ## Getting Started
 To get a copy of this project up and running on your local machine, follow these steps:
