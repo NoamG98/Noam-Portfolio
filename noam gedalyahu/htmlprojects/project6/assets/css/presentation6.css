@@ -155,8 +155,6 @@ header {
     height: 100px;
     padding: 2rem 5%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     background: var(--black);
     z-index: 999;
 }
@@ -217,7 +215,6 @@ header .link a.active{
     background-color: #fff;
     margin: 6px 0;
 }
-
 /*--------------------- 3- Header Area CSS (End) ---------------------*/
 
 /*--------------------- 4- Home Area CSS (Start) ---------------------*/
