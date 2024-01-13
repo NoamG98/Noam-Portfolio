@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --green: #d3e10e;
+    --blue: #011560;
+    --light: #f6f6f6;
+    --googleFont: Assistant;
+  }
+  .container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+  
+  section {
+    width: 100vw;
+    height: fit-content;
+  }
+  
+  section img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 20%;
+    right: 25%;
+    text-align: center;
+  }
+  
+  .overlay-text h1 {
+    color: var(--green);
+    font-family: var(--googleFont);
+    font-size: 5rem;
+  }
+  .overlay-text p {
+    color: var(--light);
+    font-family: var(--googleFont);
+  }
+  
+  .form-section {
+    width: 60vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: end;
+    gap: 1.5rem;
+  }
+  
+  .form-section label {
+    display: block;
+    direction: rtl;
+  }
+  
+  .form-section label,
+  input {
+    color: var(--blue);
+    font-family: var(--googleFont);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  .form-section input:focus {
+    outline: none;
+  }
+  
+  .input-box input {
+    width: 15vw;
+    height: 5vh;
+    border: none;
+    border-bottom: solid #d3e10e;
+    background-color: var(--light);
+    direction: rtl;
+  }
+  
+  .btn input {
+    color: #fff;
+    background-color: var(--green);
+    color: var(--blue);
+    border: none;
+    width: 15vw;
+    height: 5vh;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 950px) {
+    .overlay-text {
+      top: 10%;
+      left: 5%;
+      height: 10%;
+      right: 5%;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    section {
+      height: 50vh;
+    }
+    .overlay-text h1 {
+      font-size: 2rem;
+    }
+    .overlay-text p {
+      font-size: 0.8rem;
+    }
+    .form-section {
+      width: 100vw;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2;
+    }
+    .input-box input {
+      width: 80vw;
+    }
+  
+    .btn input {
+      width: 80vw;
+    }
+  }
+  
