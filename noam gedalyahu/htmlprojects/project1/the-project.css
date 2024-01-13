@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    background: linear-gradient(180deg, #281eff, #2dff8c);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content {
+    width: 50vw;
+    height: 43vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .text {
+    text-align: center;
+    direction: rtl;
+  }
+  
+  .text h1 {
+    color: #fff;
+    font: normal normal normal 160px/231px Satisfy;
+    font-size: 6rem;
+    text-shadow: 0px 0px 40px #00000087;
+  }
+  
+  .text h3 {
+    color: #fff;
+    font: normal normal normal 32px/38px Varela Round;
+    font-size: 1.5rem;
+  }
+  
+  .text p {
+    color: #fff;
+    font: normal normal normal 16px/20px Varela Round;
+    font-size: 0.7rem;
+  }
+  
+  .form-section {
+    width: 60vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: end;
+    gap: 1rem;
+  }
+  
+  .form-section label {
+    display: block;
+    direction: rtl;
+  }
+  
+  .form-section label,
+  input {
+    color: #fff;
+    font: normal normal normal 16px/20px Varela Round;
+  }
+  
+  .form-section input:focus {
+    outline: none;
+  }
+  
+  .input-box input {
+    width: 15vw;
+    height: 5vh;
+    border: 1px solid #fff;
+    background: transparent;
+    direction: rtl;
+  }
+  
+  .btn input {
+    color: #000;
+    background-color: #fff;
+    border: none;
+    width: 15vw;
+    height: 5vh;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 900px) {
+    .content {
+      width: 50vw;
+      height: 100vh;
+    }
+  
+    .text h1 {
+      height: 30vh;
+      font-size: 2.5rem;
+    }
+    .text h3,
+    .text p {
+      font-size: 0.7rem;
+    }
+  
+    .form-section {
+      width: 100vw;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .input-box input {
+      width: 50vw;
+      height: 4vh;
+    }
+  
+    .btn input {
+      width: 50vw;
+      height: 4vh;
+    }
+  }
+  
+ 
