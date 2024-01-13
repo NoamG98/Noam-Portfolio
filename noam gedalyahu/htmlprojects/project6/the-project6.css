@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #top-line {
+    background-color: #fdbd03;
+    width: 22.5vw;
+    height: 1.9vh;
+  }
+  
+  .whatsapp-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #fdbd03;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 30px;
+  }
+  
+  .whatsapp-icon img {
+    width: 2.5vw;
+  }
+  
+  .main {
+    width: 100vw;
+    height: 79vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .main .phone-img img {
+    width: 220px;
+    height: 300px;
+  }
+  
+  .title h1 {
+    color: #fdbd03;
+    font: normal normal 900 66px/97px Heebo;
+    font-size: 3rem;
+    text-align: right;
+  }
+  
+  .title p {
+    color: #020253;
+    font: normal normal normal 20px/29px Heebo;
+    font-size: 1rem;
+    text-align: right;
+    direction: rtl;
+  }
+  
+  .form-section1 {
+    height: 10vh;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .form-section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: end;
+  }
+  
+  form label {
+    font: normal normal bold 16px/24px Heebo;
+    font-size: 0.8rem;
+    display: block;
+    text-align: right;
+  }
+  
+  #name,
+  #email {
+    border: 10px solid #ee0101;
+    width: 21.5vw;
+    height: 5vh;
+    border: none;
+    background-color: #e5eeff;
+    border-bottom: 4px solid #fdbd03;
+    direction: rtl;
+  }
+  
+  #message {
+    width: 44vw;
+    height: 15vh;
+    border: none;
+    background-color: #e5eeff;
+    border-bottom: 4px solid #fdbd03;
+    direction: rtl;
+  }
+  
+  #submit {
+    font: normal normal bold 22px/30px Heebo;
+    border: none;
+    background-color: #fdbd03;
+    width: 166px;
+    height: 50px;
+    transition: 0.4s;
+    box-shadow: 0px 3px 6px #00000029;
+  }
+  
+  #submit:hover {
+    transform: scale(98%);
+    box-shadow: 0px 1px 7px inset #00000029;
+  }
+  
+  .icons {
+    width: 35vw;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .icons .icon {
+    width: 5vw;
+    height: 10vh;
+    background-color: #fdbd03;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px #00000029;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  img[alt="facebook"] {
+    width: 1.1vw;
+  }
+  
+  img[alt="linkedin"] {
+    width: 2.1vw;
+  }
+  
+  img[alt="whatsapp"] {
+    width: 2.2vw;
+  }
+  
+  img[alt="instagram"] {
+    width: 1.7vw;
+  }
+  
+  .bottom-line {
+    width: 54vw;
+    height: 1.9vh;
+    background-color: #fdbd03;
+  }
+  
+  @media (max-width: 750px) {
+    .container {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .top {
+      width: 100vw;
+      justify-content: flex-end;
+    }
+  
+    #top-line {
+      width: 90vw;
+      height: 1.5vh;
+      align-items: end;
+    }
+  
+    .whatsapp-icon {
+      display: none;
+    }
+  
+    .main {
+      height: 800px;
+      flex-direction: column-reverse;
+    }
+  
+    .main .phone-img img {
+      width: 20vw;
+      height: 16vh;
+    }
+  
+    .content {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .title h1 {
+      font: normal normal 900 40px/59px Heebo;
+      text-align: center;
+    }
+  
+    .title p {
+      font: normal normal normal 15px/22px Heebo;
+      text-align: center;
+    }
+  
+    .form-section1 {
+      height: 20vh;
+  
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  
+    .form-section2 {
+      height: 25.5vh;
+    }
+  
+    form label {
+      font: normal normal bold 10px/14px Heebo;
+    }
+  
+    #name,
+    #email {
+      width: 309px;
+      height: 37px;
+      border-bottom: 3px solid #fdbd03;
+    }
+  
+    #message {
+      width: 309px;
+      height: 106px;
+      border-bottom: 3px solid #fdbd03;
+    }
+  
+    #submit {
+      width: 310px;
+      height: 37px;
+      font: normal normal bold 15px/21px Heebo;
+    }
+  
+    .icons {
+      width: 75vw;
+      justify-content: space-evenly;
+    }
+  
+    .icons .icon {
+      width: 12vw;
+      height: 7vh;
+    }
+  
+    img[alt="facebook"] {
+      width: 2vw;
+    }
+  
+    img[alt="linkedin"] {
+      width: 4vw;
+    }
+  
+    img[alt="whatsapp"] {
+      width: 4vw;
+    }
+  
+    img[alt="instagram"] {
+      width: 5vw;
+    }
+  
+    .bottom-line {
+      width: 100vw;
+      height: 1.5vh;
+    }
+  }
+  
