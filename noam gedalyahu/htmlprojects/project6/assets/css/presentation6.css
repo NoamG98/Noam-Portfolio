@@ -147,7 +147,7 @@ section{
 /*--------------------- 2- Button CSS (End) ---------------------*/
 
 /*--------------------- 3- Header Area CSS (Start) ---------------------*/
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -155,25 +155,15 @@ header{
     height: 100px;
     padding: 2rem 5%;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    background: #000000;
-    -webkit-transition: all 0.5s linear;
-       -moz-transition: all 0.5s linear;
-         -o-transition: all 0.5s linear;
-            transition: all 0.5s linear;
+    background: var(--black);
     z-index: 999;
 }
-
 header.sticky{
     border-bottom: 0.1rem solid var(--grey);
     background: rgba(0, 0, 0, 0.8);
 }
-
 header .logo h2{
     font-size: 2.5rem;
     font-weight: 900;
@@ -182,35 +172,50 @@ header .logo h2{
     letter-spacing: 0.2rem;
 }
 
-header .navbar a{
+header .link a{
     color: var(--white);
     font-size: 1.8rem;
     margin-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 15px;
 }
 
-header .navbar a:hover,
-header .navbar a.active{
+header .link a:hover,
+header .link a.active{
     color: var(--blue);
 }
 
-header #menu-btn{
-    font-size: 3rem;
-    color: var(--white);
+.link {
+    list-style-type: none;
+    display: flex;
+}
+
+.link li {
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-toggle {
     cursor: pointer;
-    -webkit-transition: all 0.5s linear;
-       -moz-transition: all 0.5s linear;
-         -o-transition: all 0.5s linear;
-            transition: all 0.5s linear;
     display: none;
+    flex-direction: column;
+
 }
 
-header .fa-times{
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-}
-
-header #menu-btn:hover{
-    color: var(--blue);
+.bar {
+    height: 5px;
+    width: 30px;
+    background-color: #fff;
+    margin: 6px 0;
 }
 
 /*--------------------- 3- Header Area CSS (End) ---------------------*/
