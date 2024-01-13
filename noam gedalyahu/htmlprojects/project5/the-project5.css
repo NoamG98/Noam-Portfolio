@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    background-color: #e5eeff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 90vw;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .blue-section {
+    background-color: #020253;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3/5;
+    grid-row: 1/3;
+  }
+  
+  .blue-section h1 {
+    color: #0ee1da;
+    font: normal normal bold 61px/80px Assistant;
+    text-align: center;
+  }
+  
+  .blue-section p {
+    color: #f9f9f9;
+    font: normal normal normal 20px/26px Assistant;
+    direction: rtl;
+    text-align: center;
+  }
+  
+  .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 5px 10px 10px #0000004b;
+    filter: opacity(0.9);
+  }
+  
+  .img img:hover {
+    filter: unset;
+  }
+  
+  .form {
+    background-color: #8e097c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 4/7;
+  }
+  
+  .form h1 {
+    color: #ffffff;
+    font: normal normal bold 35px/46px Assistant;
+  }
+  
+  .form p {
+    color: #f9f9f9;
+    font: normal normal normal 20px/26px Assistant;
+    padding: 1rem;
+  }
+  
+  .form form {
+    color: #0ee1da;
+    direction: rtl;
+    font: normal normal bold 16px/24px Heebo;
+  }
+  
+  label[for="Name"] {
+    display: block;
+    margin-bottom: 4.96px;
+    text-align: right;
+  }
+  
+  label[for="email"] {
+    display: block;
+    margin-bottom: 3.35px;
+    text-align: right;
+  }
+  
+  label[for="freeText"] {
+    display: block;
+    margin-bottom: 5.64px;
+    text-align: right;
+  }
+  
+  #Name {
+    text-decoration: underline, #0ee1da;
+    background-color: #e5eeff;
+    border: none;
+    border-bottom: 5px solid #0ee1da;
+    width: 30vw;
+    height: 5vh;
+  }
+  
+  #email {
+    background-color: #e5eeff;
+    border: none;
+    border-bottom: 5px solid #0ee1da;
+    width: 30vw;
+    height: 5vh;
+  }
+  
+  #freeText {
+    background-color: #e5eeff;
+    border: none;
+    border-bottom: 5px solid #0ee1da;
+    width: 30vw;
+    height: 10vh;
+    margin-bottom: 20.24px;
+  }
+  
+  input[type="submit"] {
+    color: #011560;
+    background-color: #0ee1da;
+    width: 30vw;
+    height: 5vh;
+    border: none;
+    font: normal normal bold 24px/33px Heebo;
+  }
+  
+  @media (max-width: 900px) {
+    body {
+      justify-content: unset;
+    
+    }
+  
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(11, 1fr);
+      margin-top: unset;
+      margin-bottom: unset;
+      gap: unset;
+      display: flex;
+      display: grid; 
+      flex-direction: column;
+    }
+  
+    .blue-section {
+      width: 100vw;
+      grid-column: 1/4;
+      grid-row: 1/1;
+    }
+  
+    .blue-section h1 {
+      font: normal normal bold 36px/47px Assistant;
+    }
+  
+    .blue-section p {
+      font: normal normal normal 20px/26px Assistant;
+    }
+  
+    .img img {
+      padding: 0.3rem;
+      box-shadow: none;
+      filter: unset;
+
+
+    }
+  
+    .form {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      background-color: #8e097c;
+      grid-column: 3/1;
+      grid-row: 9/9;
+    }
+  
+    .form h1 {
+      font: normal normal bold Assistant;
+      font-size: 1.8rem;
+    }
+  
+    .form p {
+      font: normal normal normal Assistant;
+      font-size: 1.1rem;
+      padding: 30px;
+    }
+  
+    .form label {
+      font: normal normal bold Heebo;
+      font-size: 0.7rem;
+    }
+  
+    #Name {
+      margin-bottom: 17px;
+    }
+  
+    #email {
+      margin-bottom: 11px;
+    }
+  
+    #freeText {
+      width: 80vw;
+      height: 16vh;
+      margin-bottom: 13px;
+      border-bottom: 3px solid #0ee1da;
+    }
+  
+    #Name,
+    #email,
+    input[type="submit"] {
+      width: 80vw;
+      height: 10%;
+      border-bottom: 3px solid #0ee1da;
+    }
+  
+    input[type="submit"] {
+      font: normal normal bold Heebo;
+      font-size: 0.9rem;
+      letter-spacing: 0.18px;
+      margin-bottom: 60px;
+    }
+  }
+  
+  
