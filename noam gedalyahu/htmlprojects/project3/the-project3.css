@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --blue: #020253;
+    --light-blue: #e5eeff;
+    --black: #2c2c2c;
+    --gray: #707070;
+    --light-gray: #00000029;
+    --white: #ffffff;
+    --font-family: "Heebo", sans-serif;
+  }
+  .sm-screen-photo {
+    display: none;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .img-box {
+    width: 60vw;
+    height: 100vh;
+  }
+  .lg-screen-photo {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .form-box {
+    direction: rtl;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .form-box h1,
+  .form-box p {
+    font-family: var(--font-family);
+    color: var(--blue);
+  }
+  
+  .input-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .input-text label {
+    font-family: var(--font-family);
+    font-weight: 600;
+  }
+  .input-text input {
+    width: 20vw;
+    height: 4vh;
+    border: none;
+    border-bottom: 3px solid var(--blue);
+    background-color: var(--light-blue);
+  }
+  .btn input {
+    font-family: var(--font-family);
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: var(--white);
+    border: var(--b);
+    margin-top: 1rem;
+    width: 50%;
+    height: 4vh;
+  }
+  
+  @media (max-width: 700px) {
+    .lg-screen-photo {
+      display: none;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+    .img-box {
+      width: 100vw;
+      height: fit-content;
+    }
+    .sm-screen-photo {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .form-box {
+      width: 100vw;
+      height: 70vh;
+    }
+    .input-text input,
+    .btn input {
+      width: 80vw;
+    }
+  }
+  
