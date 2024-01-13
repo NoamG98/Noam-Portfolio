@@ -1,0 +1,894 @@
+/* Table of Contents
+----------------------------------
+
+00- Global CSS
+01- Heading CSS
+02- Button CSS
+03- Header Area CSS
+04- Home Area CSS
+05- About Area CSS
+06- Qualification Area CSS 
+07- Projects Area CSS
+08- Contact Area CSS
+09- Footer Area CSS
+10- Scroll-Top Area CSS
+
+*/
+
+
+/*--------------------- 00- Global CSS (Start) ---------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --black: #000000;
+    --white: #F7F5F2;
+    --grey: #DFDFDE;
+    --blue: #176B87;
+    --navy: #001C30;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+  	        transition: all 0.2s linear;
+}
+
+*::selection{
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body{
+    background-color: var(--navy);
+}
+
+section{
+    padding: 2rem 5%;
+}
+
+::-webkit-scrollbar{
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+    background-color: var(--blue);
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--black);
+}
+
+.swiper-pagination-bullet{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50rem;
+    background-color: var(--grey);
+}
+
+.swiper-pagination-bullet-active{
+    width: 3rem;
+    background: var(--blue);
+}
+
+/*--------------------- 00- Global CSS (End) ---------------------*/
+
+
+/*--------------------- 01- Heading CSS (Start) ---------------------*/
+
+.heading{
+    margin-bottom: 2rem;
+}
+
+.heading h2{
+    text-align: center;
+    padding-bottom: 2rem;
+    color:var(--blue);
+    font-size: 4rem;
+}
+
+.heading h2 span{
+    position: relative;
+    z-index: 0;
+    color: var(--white);
+}
+
+.heading h2 span::before{
+    content: '';
+    position: absolute;
+    bottom: -0.5rem; left: 0;
+    z-index: -1;
+    background: var(--blue);
+    height: 0.2rem;
+    width: 80%;
+    margin-left: 10%;
+}
+
+/*--------------------- 01- Heading CSS (End) ---------------------*/
+
+
+
+/*--------------------- 02- Button CSS (Start) ---------------------*/
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: #000000;
+    background-color: transparent;
+    border: 0.2rem solid #000000;
+}
+
+.btn i{
+    padding-left: 1rem;
+}
+
+.btn:hover{
+    color: var(--white);
+    background-color: var(--blue);
+    cursor: pointer;
+}
+.btn1{
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: var(--blue);
+    background-color: transparent;
+    border: 0.2rem solid var(--blue);
+}
+.btn1 i{
+        padding-left: 1rem;
+}
+    
+.btn1:hover{
+    color: var(--white);
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+
+/*--------------------- 02- Button CSS (End) ---------------------*/
+
+
+
+/*--------------------- 03- Header Area CSS (Start) ---------------------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--black);
+    z-index: 999;
+}
+header.sticky{
+    border-bottom: 0.1rem solid var(--grey);
+    background: rgba(0, 0, 0, 0.8);
+}
+header .logo h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+header .link a{
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 15px;
+}
+
+header .link a:hover,
+header .link a.active{
+    color: var(--blue);
+}
+
+.link {
+    list-style-type: none;
+    display: flex;
+}
+
+.link li {
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+
+}
+
+.bar {
+    height: 5px;
+    width: 30px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+
+/*--------------------- 03- Header Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 04- Home Area CSS (Start) ---------------------*/
+.home{
+    padding: 0rem 5%;
+    background-color: var(--blue) ;
+    min-height: 100vh;
+}
+
+.home .box-container{
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.home .image{
+    text-align: center;
+    -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+
+}
+
+.home .image img{
+    height: 45rem;
+    width: 45rem;
+    border-radius: 50% 50% 50% 50% / 60% 60% 60% 60% ;
+    object-fit:cover;
+}
+
+.home .image img{
+    border: 0.6rem solid var(--navy);
+}
+
+.home .content{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+        flex: 1 1 40rem;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    margin-top: 7rem;
+}
+
+.home .content h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.home .content h1{
+    font-size: 4rem;
+    color: var(--white);
+    padding: 1rem 0;
+    text-transform: none;
+}
+
+.home .content h1 span{
+    color: var(--blue);
+
+}
+
+.home .content p{
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--white);
+    padding-bottom: 2rem;
+    line-height: 1.5;
+}
+/*--------------------- 04 - Home Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 05- About Area CSS (Start) ---------------------*/
+.about .box-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.about .image{
+    width: 32rem;
+    text-align: center;
+}
+
+.about .image img{
+    width: 100%;
+    border: 1rem solid var(--blue);
+}
+
+.about .content{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 55rem;
+        flex: 1 1 55rem;
+}
+
+.about .content h2{
+    font-size: 3rem;
+    color: var(--white);
+    padding-bottom: 1rem;
+}
+
+.about .content > p{
+    font-size: 1.6rem;
+    color: var(--grey);
+    line-height: 1.6;
+    padding-bottom: 1rem;
+}
+
+.about .content .about-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.about .content .about-info .info{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 15rem;
+        flex: 1 1 15rem;
+}
+
+.about .content .about-info .info h4{
+    font-size: 1.6rem;
+    color: var(--white);
+    padding-bottom: 1rem;
+}
+
+.about .content .about-info .info span{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--grey);
+}
+
+.about .content .about-info .info .btn{
+    margin-top: 1rem;
+}
+
+.counting{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 35rem;
+        flex: 1 1 35rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.counting .box{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 18rem;
+        flex: 1 1 18rem;
+    text-align: center;
+    background-color: var(--blue);
+    padding: 2rem;
+}
+
+.counting .box .count{
+    font-size: 3.5rem;
+    color: var(--navy);
+    padding-bottom: 0.5rem;
+}
+
+.counting .box h3{
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.skill-container{
+    padding: 2rem 0;
+}
+
+.skills{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.skill-item{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 30rem;
+        flex: 1 1 30rem;
+    margin-right: 1.5rem;
+}
+
+.skill-item .box{
+    padding:1rem 0;
+}
+
+ .skill-item .box h3{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding:.7rem 0;
+    font-size: 1.7rem;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.skill-item .box .progress-bar{
+    width:100%;
+    background:var(--black);
+    overflow:hidden;
+    height:1rem;
+    border-radius: 50rem;
+}
+
+ .skill-item .box .progress-bar span{
+    display:block;
+    height:100%;
+    background: var(--blue);
+}
+
+.skill-item.item1 .box:nth-child(1) .progress-bar span{
+    width:95%;
+}
+
+ .skill-item.item1 .box:nth-child(2) .progress-bar span{
+    width:90%;
+}
+.skill-item.item1 .box:nth-child(3) .progress-bar span{
+    width:10%;
+}
+
+/*--------------------- 05- About Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 06- Qualification Area CSS (Start) ---------------------*/
+.qualification .box-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.education, .experience{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+        flex: 1 1 40rem;
+}
+
+.experience-item{
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+        flex: 1 1 40rem;
+    padding: 0 3rem 2rem 3rem;
+    border-left: 0.2rem solid var(--blue);
+    margin-left: 2rem;
+}
+
+.experience-item i{
+    position: absolute;
+    top: 0; 
+    left: -2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:var(--white);
+    background:var(--blue);
+}
+
+.experience-item .content{
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    border-left: 2rem;
+}
+
+.experience-item span{
+    background: #222;
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    font-size: 1.8rem;
+    border-radius: 50rem;
+}
+
+.experience-item h3{
+    font-size: 2.5rem;
+    color: var(--white);
+    padding: 2rem 0;
+}
+
+.experience-item p{
+    color: var(--grey);
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+/*--------------------- 06- Qualification Area CSS (End) ---------------------*/
+
+
+
+
+
+
+/*--------------------- 07- Projects Area CSS (Start) ---------------------*/
+.Projects .box-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    justify-content: center;
+    -webkit-box-pack: none;
+    align-items: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -ms-flex-align: center;
+    -ms-flex-wrap: wrap;
+    -ms-flex-pack: center;
+    gap: 1.5rem;
+}
+
+.Projects-item{
+ 
+    -webkit-box-flex: 1;
+    -ms-flex: 20rem;
+        flex: 20rem;
+    background-color: var(--blue);
+    padding: 4rem 3rem;
+    text-align: center;
+    border: 0.1rem solid var(--black);
+    border-radius: 1rem;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+
+.Projects-item:hover{
+    background-color: var(--black);
+}
+
+.Projects-item i{
+    color: var(--white);
+    font-size: 4rem;
+}
+
+.Projects-item h3{
+    font-size: 2rem;
+    color: var(--white);
+    padding: 1.5rem 0;
+}
+
+.Projects-item p{
+    font-size: 1.6rem;
+    color: var(--grey);
+    line-height: 1.6;
+}
+
+.Projects-item:hover p{
+    color: var(--white);
+}
+.Projects-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.Projects-item a{
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    background-color: transparent;
+    border: 0.2rem solid var(--white);
+}
+    
+.Projects-item a:hover{
+    color: var(--white);
+    background-color: var(--blue);
+    cursor: pointer;
+}
+/*--------------------- 07- Projects Area CSS (End) ---------------------*/
+
+
+/*--------------------- 08- Contact Area CSS (Start) ---------------------*/
+.contact .alert{
+    font-size: 2rem;
+    color: var(--blue);
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+}
+
+.contact .box-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-info{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 42rem;
+        flex: 1 1 42rem;
+}
+
+.contact-info h3{
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.contact-info > p{
+    font-size: 1.6rem;
+    color: var(--grey);
+    padding: 0.5rem 0;
+}
+
+.contact-info .info-item{
+    padding: 1rem 0;
+}
+
+.contact-info .info-item .gmail,
+.contact-info .info-item .linkedin,
+.contact-info .info-item .github{
+    text-transform: none;
+}
+
+.contact-info .info-item h4{
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.contact-info .info-item .detail{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contact-info .info-item .detail .fas,
+.contact-info .info-item .detail .fab{
+    border-radius: 50%;
+    color: var(--blue);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.contact-info .info-item .detail p{
+    font-size: 1.6rem;
+    color: var(--grey);
+    line-height: 1.6;
+    padding-left: 1rem;
+}
+
+.contact-form{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 42rem;
+        flex: 1 1 42rem;
+}
+
+.contact-form .box{
+    width: 100%;
+    text-transform: none;
+    color: var(--grey);
+    font-size: 1.6rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin: 0.5rem 0;
+    background-color: var(--blue);
+}
+
+.contact-form .box:focus{
+    border-color: var(--white);
+}
+
+.contact-form .box::placeholder{
+    color: var(--grey);
+}
+
+.contact-form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+.contact-form .btn{
+    margin-top: 1rem;
+}
+
+/*--------------------- 08- Contact Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 09- Footer Area CSS (Start) ---------------------*/
+footer{
+    background-color: var(--black);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer .social{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+footer .social .fab{
+    background-color: var(--black);
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    color: var(--white);
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+footer .social .fab:hover{
+    color: var(--black);
+    background-color: var(--white);
+}
+
+footer .content p{
+    font-size: 2rem;
+    color: var(--white);
+}
+
+footer .content p span{
+    color: var(--blue);
+}
+
+/*--------------------- 09- Footer Area CSS (End) ---------------------*/
+
+
+
+/*--------------------- 10- Scroll-Top (Start) ---------------------*/
+.scroll-top{
+    position: fixed;
+    bottom: 1rem;
+    right:1rem;
+    height: 5rem;
+    width: 5rem;
+    font-size: 3rem;
+    font-weight:lighter;
+    background: var(--black);
+    color: var(--white);
+    border: 0.2rem solid var(--white);
+    border-radius: 50%;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .scroll-top:hover{
+    background: var(--white);
+    color:var(--black);
+  }
+
+/*--------------------- 10- Scroll-Top (End) ---------------------*/

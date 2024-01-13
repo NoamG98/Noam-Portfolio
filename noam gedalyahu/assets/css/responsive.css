@@ -1,0 +1,56 @@
+/*--------------------- Responsive (Start) ---------------------*/
+
+@media (max-width: 991px) {
+    .header{
+        height: 75px;
+    }
+    .home .image img{
+        height: 30rem;
+        width: 30rem;
+        border-radius: 50% 50% 50% 50% / 60% 60% 60% 60% ;
+        object-fit:cover;
+    }
+    #mobile-menu {
+        display: flex;
+        
+    }
+
+    .link {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #001C30;
+
+    }
+
+    .link.show {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+html{
+    font-size: 55%;
+}
+
+@media (max-width: 768px){
+    section, header{
+        padding: 2rem;
+    } 
+
+}
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    section, header{
+        padding: 1rem;
+    }
+
+}
+
+/*--------------------- Responsive (End) ---------------------*/
