@@ -41,7 +41,7 @@ This portfolio is built using HTML and CSS to present my skills and highlight si
 ## Getting Started
 To get a copy of this project up and running on your local machine, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/NoamG98/Noam-Protfolio.`
+1. Clone the repository: `git clone https://github.com/NoamG98/Noam-Portfolio.`
 2. Open the project directory: `cd portfolio-project`
 3. Open the `index.html` file in your preferred browser.
 
