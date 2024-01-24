@@ -504,11 +504,11 @@ header .link a.active{
     background: var(--blue);
 }
 
-.skill-item.item1 .box:nth-child(1) .progress-bar span{
+
+ .skill-item.item1 .box:nth-child(1) .progress-bar span{
     width:95%;
 }
-
- .skill-item.item1 .box:nth-child(2) .progress-bar span{
+.skill-item.item1 .box:nth-child(2) .progress-bar span{
     width:90%;
 }
 .skill-item.item1 .box:nth-child(3) .progress-bar span{
